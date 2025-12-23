@@ -1,7 +1,10 @@
 import React from 'react';
 import { cn } from '../../lib/utils';
 
+// Menerima props tampilan (variant, size) dan meneruskan 'ref' ke elemen asli
 const Button = React.forwardRef(({ className, variant = 'default', size = 'default', ...props }, ref) => {
+  
+  // Style dasar: Layout, font, dan animasi interaksi
   const baseStyles = "inline-flex items-center justify-center rounded-full font-bold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50";
   
   const variants = {
@@ -19,11 +22,14 @@ const Button = React.forwardRef(({ className, variant = 'default', size = 'defau
   return (
     <button
       ref={ref}
+      // Menggabungkan semua style (base + pilihan variant/size + custom)
       className={cn(baseStyles, variants[variant], sizes[size], className)}
       {...props}
     />
   );
 });
 
+// Memberi nama komponen untuk memudahkan debugging
 Button.displayName = "Button";
+
 export default Button;
