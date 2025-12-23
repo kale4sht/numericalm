@@ -63,7 +63,7 @@ export default function Home() {
             
           {/* UPDATED: Menggunakan tag <a> untuk link eksternal */}
           <a 
-            href="https://scratch.mit.edu/projects/1255122487"
+            href="https://scratch.mit.edu/projects/1255122487/fullscreen/"
             target="_blank" 
             rel="noopener noreferrer"
             className="relative z-20 bg-[#4A90E2] text-white px-6 md:px-8 py-3 md:py-4 rounded-full text-base md:text-lg font-bold shadow-[0_6px_0_rgb(50,100,180)] active:shadow-none active:translate-y-1 transition-all hover:brightness-110 flex items-center gap-3 w-max mt-4 md:mt-0"

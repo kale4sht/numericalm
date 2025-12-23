@@ -97,16 +97,17 @@ export default function Profile() {
     }
   };
 
-  // Helper untuk warna badge kategori (DIMODIFIKASI)
+  // Helper untuk warna badge kategori (SUDAH DIMODIFIKASI SESUAI REQUEST)
   const getCategoryColor = (cat) => {
-    // Rendah = Oren Tua
-    if (cat === 'Rendah') return 'bg-orange-600 text-white';
+    // Tinggi = Oren Tua ke Coklatan
+    // Menggunakan bg-orange-700 agar terlihat lebih tua/coklat dibanding orange biasa
+    if (cat === 'Tinggi') return 'bg-orange-700 text-white';
     
     // Sedang = Kuning
     if (cat === 'Sedang') return 'bg-nc-yellow text-nc-brown-dark';
     
-    // Tinggi = Hijau
-    if (cat === 'Tinggi') return 'bg-nc-grass text-white';
+    // Rendah = Hijau
+    if (cat === 'Rendah') return 'bg-nc-grass text-white';
     
     return 'bg-gray-200 text-gray-800';
   };
